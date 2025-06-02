@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# DirtyPower - Energy Supply Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+
+This codebase contains a React-based website for DirtyPower, a company offering energy from various sources including gas, coal, and nuclear power plants. The site provides customers with a comprehensive interface to compare different energy options, view detailed information about each energy type, explore pricing plans, and contact the company.
+
+The website is structured with the following main features:
+- **Homepage** with services overview and customer testimonials
+- **Energy Types** page detailing the different energy sources and their characteristics
+- **Comparison Tool** allowing users to compare energy options by consumption needs
+- **Offers** section with filtering for residential and business customers
+- **Contact Page** with a form and company information
+
+The project uses React with TypeScript, React Router for navigation, Tailwind CSS for styling, and JSON data files to simulate backend data. The UI is fully responsive and designed to work across all device sizes.
+
+_This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)._
+
+## Legal Notice
+
+**IMPORTANT**: This codebase is the exclusive property of ENGIE. Any use, reproduction, distribution, or modification without explicit authorization from ENGIE is strictly prohibited. See the LICENSE file for more details.
 
 ## Available Scripts
 
@@ -38,6 +55,39 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Project Structure
+
+```
+src/
+  ├── components/       # Reusable UI components
+  │   ├── EnergyCard.tsx    # Display energy type information
+  │   ├── Footer.tsx        # Site footer component
+  │   ├── Hero.tsx          # Hero banner component for homepage
+  │   ├── Navbar.tsx        # Navigation menu component
+  │   └── OfferCard.tsx     # Display energy offer information
+  │
+  ├── data/            # JSON data files
+  │   ├── energy-types.json # Energy types information
+  │   └── offers.json       # Energy offers information
+  │
+  ├── pages/           # Page components
+  │   ├── ComparePage.tsx   # Energy comparison tool
+  │   ├── ContactPage.tsx   # Contact form and information
+  │   ├── EnergyTypesPage.tsx # Energy types listing
+  │   ├── HomePage.tsx      # Website homepage
+  │   └── OffersPage.tsx    # Energy offers listing
+  │
+  ├── assets/          # Images and static resources
+  └── App.tsx          # Main application component
+```
+
+## Technologies Used
+
+- **React** with **TypeScript** for UI development
+- **React Router** for navigation
+- **Tailwind CSS** for styling
+- **Heroicons** for icon components
 
 ## Learn More
 
