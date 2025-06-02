@@ -1,47 +1,82 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# React & TypeScript specific
+# -------------------------------------------------------------------------------
+
+# Dependencies
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+# Testing
 /coverage
+/.nyc_output
+/cypress/screenshots
+/cypress/videos
+/reports
 
-# production
+# Production & build files
 /build
+/dist
+/storybook-static
 
-# misc
-.DS_Store
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+.cache
+
+# Environment & local files
+.env
+.env.*
+!.env.example
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.npmrc
 
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Editor & IDE files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.history/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Package managers
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnpm-store
+package-lock.json
+yarn.lock
+# Keep .yarn/cache if using Zero-Installs
+# !.yarn/cache
+
+# Misc
+.tmp/
+.temp/
+.eslintcache
+*.bak
+*.swp
+*.swo
