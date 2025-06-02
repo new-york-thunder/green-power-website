@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Gaz Naturel",
+    "description": "L'énergie provenant du gaz naturel, un combustible fossile utilisé dans les centrales à gaz.",
+    "pricePerKwh": 0.12,
+    "pricePerMonth": 20,
+    "type": "fossil",
+    "advantages": [
+      "Disponibilité constante",
+      "Coût stable",
+      "Production d'énergie flexible"
+    ],
+    "disadvantages": [
+      "Émissions de CO2",
+      "Source non renouvelable",
+      "Impact environnemental modéré"
+    ],
+    "imageUrl": "/images/gaz-naturel.jpg",
+    "co2PerKwh": 490
+  },
+  {
+    "id": 2,
+    "name": "Charbon",
+    "description": "L'énergie produite par la combustion du charbon dans des centrales thermiques.",
+    "pricePerKwh": 0.10,
+    "pricePerMonth": 18,
+    "type": "fossil",
+    "advantages": [
+      "Coût de production bas",
+      "Grande disponibilité",
+      "Fiabilité"
+    ],
+    "disadvantages": [
+      "Émissions élevées de CO2",
+      "Pollution atmosphérique importante",
+      "Impact environnemental majeur"
+    ],
+    "imageUrl": "/images/charbon.jpg",
+    "co2PerKwh": 820
+  },
+  {
+    "id": 3,
+    "name": "Nucléaire",
+    "description": "L'énergie générée par la fission nucléaire dans des centrales nucléaires.",
+    "pricePerKwh": 0.11,
+    "pricePerMonth": 22,
+    "type": "nuclear",
+    "advantages": [
+      "Faibles émissions de CO2",
+      "Production stable et prévisible",
+      "Grande capacité de production"
+    ],
+    "disadvantages": [
+      "Gestion des déchets radioactifs",
+      "Risques d'accidents",
+      "Coûts initiaux élevés"
+    ],
+    "imageUrl": "/images/nucleaire.jpg",
+    "co2PerKwh": 12
+  }
+]

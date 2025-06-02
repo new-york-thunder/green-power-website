@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "name": "Offre Entreprise Standard",
+    "description": "Contrat d'électricité pour petites et moyennes entreprises avec tarification fixe.",
+    "targetAudience": "business",
+    "pricePerKwh": 0.11,
+    "standingCharge": 80,
+    "minimumContractPeriod": 12,
+    "features": [
+      "Tarif fixe pendant toute la durée du contrat",
+      "Service client dédié aux entreprises",
+      "Facturation détaillée par site",
+      "Portail de gestion en ligne"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Offre Entreprise Premium",
+    "description": "Contrat d'électricité haut de gamme pour grandes entreprises avec tarification personnalisée.",
+    "targetAudience": "business",
+    "pricePerKwh": 0.10,
+    "standingCharge": 150,
+    "minimumContractPeriod": 24,
+    "features": [
+      "Conseiller personnel dédié",
+      "Analyse de consommation trimestrielle",
+      "Intervention prioritaire en cas de problème",
+      "Options de tarification flexibles",
+      "Solutions de gestion énergétique avancées"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Offre Particulier Basic",
+    "description": "Contrat d'électricité simple et économique pour les particuliers.",
+    "targetAudience": "residential",
+    "pricePerKwh": 0.14,
+    "standingCharge": 15,
+    "minimumContractPeriod": 12,
+    "features": [
+      "Tarif fixe pendant 12 mois",
+      "Facturation électronique",
+      "Service client par téléphone et email",
+      "Changement de fournisseur simplifié"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Offre Particulier Confort",
+    "description": "Contrat d'électricité avec services additionnels pour les foyers.",
+    "targetAudience": "residential",
+    "pricePerKwh": 0.15,
+    "standingCharge": 20,
+    "minimumContractPeriod": 12,
+    "features": [
+      "Tarif fixe pendant 12 mois",
+      "Diagnostic énergétique gratuit",
+      "Assistance dépannage 24/7",
+      "Application mobile de suivi de consommation",
+      "Programme de fidélité avec récompenses"
+    ]
+  }
+]
