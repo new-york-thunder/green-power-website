@@ -20,10 +20,10 @@ const ComparePage: React.FC = () => {
   const [selectedEnergyIds, setSelectedEnergyIds] = useState<number[]>([]);
 
   useEffect(() => {
-    // Dans un vrai projet, nous ferions un appel API ici
+    // In a real project, we would make an API call here
     setEnergyTypes(energyTypesData as EnergyType[]);
     
-    // Sélectionner les deux premières énergies par défaut
+    // Select the first two energies by default
     if (energyTypesData.length >= 2) {
       setSelectedEnergyIds([energyTypesData[0].id, energyTypesData[1].id]);
     }
@@ -63,18 +63,18 @@ const ComparePage: React.FC = () => {
     <div className="bg-light min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-dark">Comparateur d'Énergies</h1>
+          <h1 className="text-4xl font-bold text-dark">Energy Comparison Tool</h1>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Comparez les différentes options énergétiques selon vos besoins
+            Compare different energy options according to your needs
           </p>
         </div>
         
         <div className="bg-white p-6 rounded-lg shadow-md mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Paramètres de comparaison</h2>
+          <h2 className="text-2xl font-semibold mb-6">Comparison Parameters</h2>
           
           <div className="mb-8">
             <label htmlFor="consumption" className="block text-gray-700 font-medium mb-2">
-              Consommation annuelle estimée (kWh/an)
+              Estimated annual consumption (kWh/year)
             </label>
             <input
               type="range"
@@ -94,7 +94,7 @@ const ComparePage: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="font-medium text-gray-700 mb-2">Sélectionnez les énergies à comparer (max. 3)</h3>
+            <h3 className="font-medium text-gray-700 mb-2">Select energies to compare (max. 3)</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {energyTypes.map(energy => (
                 <div key={energy.id} className="flex items-center">
@@ -116,14 +116,14 @@ const ComparePage: React.FC = () => {
         
         {selectedEnergies.length > 0 ? (
           <div className="bg-white p-6 rounded-lg shadow-md overflow-hidden">
-            <h2 className="text-2xl font-semibold mb-6">Résultats de la comparaison</h2>
+            <h2 className="text-2xl font-semibold mb-6">Comparison Results</h2>
             
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
                     <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Critères
+                      Criteria
                     </th>
                     {selectedEnergies.map(energy => (
                       <th key={energy.id} scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -135,37 +135,37 @@ const ComparePage: React.FC = () => {
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      Prix par kWh
+                      Price per kWh
                     </td>
                     {selectedEnergies.map(energy => (
                       <td key={energy.id} className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {energy.pricePerKwh.toFixed(2)}€
+                        £{energy.pricePerKwh.toFixed(2)}
                       </td>
                     ))}
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      Abonnement mensuel
+                      Monthly subscription
                     </td>
                     {selectedEnergies.map(energy => (
                       <td key={energy.id} className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {energy.pricePerMonth.toFixed(2)}€
+                        £{energy.pricePerMonth.toFixed(2)}
                       </td>
                     ))}
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      Coût annuel estimé
+                      Estimated annual cost
                     </td>
                     {selectedEnergies.map(energy => (
                       <td key={energy.id} className="px-6 py-4 whitespace-nowrap text-sm font-medium text-accent">
-                        {calculateAnnualCost(energy).toFixed(2)}€
+                        £{calculateAnnualCost(energy).toFixed(2)}
                       </td>
                     ))}
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      Émissions CO2 annuelles
+                      Annual CO2 emissions
                     </td>
                     {selectedEnergies.map(energy => (
                       <td key={energy.id} className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
@@ -175,11 +175,11 @@ const ComparePage: React.FC = () => {
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      Type d'énergie
+                      Energy type
                     </td>
                     {selectedEnergies.map(energy => (
                       <td key={energy.id} className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {energy.type === 'fossil' ? 'Fossile' : 'Nucléaire'}
+                        {energy.type === 'fossil' ? 'Fossil' : 'Nuclear'}
                       </td>
                     ))}
                   </tr>
@@ -188,7 +188,7 @@ const ComparePage: React.FC = () => {
             </div>
             
             <div className="mt-8">
-              <h3 className="text-lg font-semibold mb-4">Avantages et inconvénients</h3>
+              <h3 className="text-lg font-semibold mb-4">Advantages and disadvantages</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {selectedEnergies.map(energy => (
@@ -196,7 +196,7 @@ const ComparePage: React.FC = () => {
                     <h4 className="font-semibold mb-3">{energy.name}</h4>
                     
                     <div className="mb-4">
-                      <h5 className="text-sm font-medium text-green-600 mb-2">Avantages</h5>
+                      <h5 className="text-sm font-medium text-green-600 mb-2">Advantages</h5>
                       <ul className="list-disc list-inside space-y-1">
                         {energy.advantages.map((advantage, index) => (
                           <li key={index} className="text-sm text-gray-600">{advantage}</li>
@@ -205,7 +205,7 @@ const ComparePage: React.FC = () => {
                     </div>
                     
                     <div>
-                      <h5 className="text-sm font-medium text-red-600 mb-2">Inconvénients</h5>
+                      <h5 className="text-sm font-medium text-red-600 mb-2">Disadvantages</h5>
                       <ul className="list-disc list-inside space-y-1">
                         {energy.disadvantages.map((disadvantage, index) => (
                           <li key={index} className="text-sm text-gray-600">{disadvantage}</li>
@@ -227,7 +227,7 @@ const ComparePage: React.FC = () => {
               </div>
               <div className="ml-3">
                 <p className="text-sm text-yellow-700">
-                  Veuillez sélectionner au moins une énergie pour afficher la comparaison.
+                  Please select at least one energy source to display the comparison.
                 </p>
               </div>
             </div>
@@ -236,10 +236,10 @@ const ComparePage: React.FC = () => {
         
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-4">
-            Vous avez besoin d'aide pour choisir la meilleure option énergétique pour vos besoins ?
+            Need help choosing the best energy option for your needs?
           </p>
           <button className="py-2 px-6 bg-primary text-white rounded-md hover:bg-secondary transition-colors">
-            Contactez nos conseillers
+            Contact our advisors
           </button>
         </div>
       </div>

@@ -19,7 +19,7 @@ const EnergyTypesPage: React.FC = () => {
   const [energyTypes, setEnergyTypes] = useState<EnergyType[]>([]);
 
   useEffect(() => {
-    // Dans un vrai projet, nous ferions un appel API ici
+    // In a real project, we would make an API call here
     setEnergyTypes(energyTypesData as EnergyType[]);
   }, []);
 
@@ -27,9 +27,9 @@ const EnergyTypesPage: React.FC = () => {
     <div className="bg-light min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-dark">Nos Types d'Énergie</h1>
+          <h1 className="text-4xl font-bold text-dark">Our Energy Types</h1>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Découvrez nos différentes sources d'énergie et leurs caractéristiques
+            Discover our different energy sources and their characteristics
           </p>
         </div>
         
@@ -40,36 +40,36 @@ const EnergyTypesPage: React.FC = () => {
         </div>
         
         <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-6 text-center">Comment choisir votre source d'énergie ?</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">How to choose your energy source?</h2>
           
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-semibold mb-2">Tenez compte de votre consommation</h3>
+              <h3 className="text-lg font-semibold mb-2">Consider your consumption</h3>
               <p className="text-gray-600">
-                Analysez votre consommation énergétique actuelle pour déterminer quelle offre est la plus adaptée à vos besoins.
-                Une famille nombreuse aura des besoins différents d'une personne vivant seule.
+                Analyze your current energy consumption to determine which offer is best suited to your needs.
+                A large family will have different needs than someone living alone.
               </p>
             </div>
             
             <div>
-              <h3 className="text-lg font-semibold mb-2">Comparez les prix</h3>
+              <h3 className="text-lg font-semibold mb-2">Compare prices</h3>
               <p className="text-gray-600">
-                Ne regardez pas uniquement le prix du kWh, mais aussi l'abonnement mensuel et les éventuels frais supplémentaires.
-                Notre comparateur vous aide à estimer votre facture totale.
+                Don't just look at the price per kWh, but also the monthly subscription and any additional fees.
+                Our comparison tool helps you estimate your total bill.
               </p>
             </div>
             
             <div>
-              <h3 className="text-lg font-semibold mb-2">Considérez l'impact environnemental</h3>
+              <h3 className="text-lg font-semibold mb-2">Consider environmental impact</h3>
               <p className="text-gray-600">
-                Chaque source d'énergie a un impact différent sur l'environnement. Les émissions de CO2 sont un indicateur
-                important pour évaluer cet impact.
+                Each energy source has a different impact on the environment. CO2 emissions are an important
+                indicator for assessing this impact.
               </p>
             </div>
             
             <div className="text-center mt-8">
               <button className="py-2 px-6 bg-primary text-white rounded-md hover:bg-secondary transition-colors">
-                Utiliser notre comparateur
+                Use our comparison tool
               </button>
             </div>
           </div>

@@ -18,7 +18,7 @@ const OffersPage: React.FC = () => {
   const [filter, setFilter] = useState<'all' | 'business' | 'residential'>('all');
 
   useEffect(() => {
-    // Dans un vrai projet, nous ferions un appel API ici
+    // In a real project, we would make an API call here
     setOffers(offersData as Offer[]);
   }, []);
 
@@ -30,9 +30,9 @@ const OffersPage: React.FC = () => {
     <div className="bg-light min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-dark">Nos Offres d'Énergie</h1>
+          <h1 className="text-4xl font-bold text-dark">Our Energy Offers</h1>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Découvrez nos offres adaptées pour les particuliers et les entreprises
+            Discover our offers tailored for residential and business customers
           </p>
         </div>
         
@@ -46,7 +46,7 @@ const OffersPage: React.FC = () => {
                   : 'bg-white text-gray-700 hover:bg-gray-50'
               } border border-gray-300`}
             >
-              Toutes les offres
+              All offers
             </button>
             <button
               onClick={() => setFilter('residential')}
@@ -56,7 +56,7 @@ const OffersPage: React.FC = () => {
                   : 'bg-white text-gray-700 hover:bg-gray-50'
               } border-t border-b border-gray-300`}
             >
-              Particuliers
+              Residential
             </button>
             <button
               onClick={() => setFilter('business')}
@@ -66,7 +66,7 @@ const OffersPage: React.FC = () => {
                   : 'bg-white text-gray-700 hover:bg-gray-50'
               } border border-gray-300`}
             >
-              Entreprises
+              Business
             </button>
           </div>
         </div>
@@ -78,7 +78,7 @@ const OffersPage: React.FC = () => {
         </div>
         
         <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-6 text-center">Pourquoi choisir ÉnergieVerte ?</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">Why choose GreenPower?</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
@@ -89,9 +89,9 @@ const OffersPage: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Prix transparents</h3>
+                  <h3 className="font-semibold mb-1">Transparent pricing</h3>
                   <p className="text-gray-600 text-sm">
-                    Pas de frais cachés, vous payez exactement ce qui est annoncé.
+                    No hidden fees, you pay exactly what is advertised.
                   </p>
                 </div>
               </div>
@@ -103,9 +103,9 @@ const OffersPage: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Service client de qualité</h3>
+                  <h3 className="font-semibold mb-1">Quality customer service</h3>
                   <p className="text-gray-600 text-sm">
-                    Une équipe dédiée disponible pour répondre à vos questions.
+                    A dedicated team available to answer all your questions.
                   </p>
                 </div>
               </div>
@@ -117,9 +117,9 @@ const OffersPage: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Fiabilité garantie</h3>
+                  <h3 className="font-semibold mb-1">Guaranteed reliability</h3>
                   <p className="text-gray-600 text-sm">
-                    Approvisionnement continu et stable en énergie.
+                    Continuous and stable energy supply.
                   </p>
                 </div>
               </div>
@@ -133,9 +133,9 @@ const OffersPage: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Engagement flexible</h3>
+                  <h3 className="font-semibold mb-1">Flexible commitment</h3>
                   <p className="text-gray-600 text-sm">
-                    Des contrats adaptés à vos besoins avec des durées d'engagement variables.
+                    Contracts tailored to your needs with variable commitment periods.
                   </p>
                 </div>
               </div>
@@ -147,9 +147,9 @@ const OffersPage: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Facturation claire</h3>
+                  <h3 className="font-semibold mb-1">Clear billing</h3>
                   <p className="text-gray-600 text-sm">
-                    Factures détaillées et compréhensibles, disponibles en ligne.
+                    Detailed and understandable bills, available online.
                   </p>
                 </div>
               </div>
@@ -161,9 +161,9 @@ const OffersPage: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Démarches simplifiées</h3>
+                  <h3 className="font-semibold mb-1">Simplified procedures</h3>
                   <p className="text-gray-600 text-sm">
-                    Souscription rapide et sans paperasse excessive.
+                    Quick subscription without excessive paperwork.
                   </p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ const OffersPage: React.FC = () => {
           
           <div className="text-center mt-8">
             <button className="py-2 px-6 bg-primary text-white rounded-md hover:bg-secondary transition-colors">
-              Souscrire maintenant
+              Subscribe now
             </button>
           </div>
         </div>

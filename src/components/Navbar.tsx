@@ -14,23 +14,23 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-white text-xl font-bold">ÉnergieVerte</span>
+              <span className="text-white text-xl font-bold">GreenPower</span>
             </Link>
           </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center md:space-x-4">
             <Link to="/" className="text-white hover:bg-secondary px-3 py-2 rounded-md text-sm font-medium">
-              Accueil
+              Home
             </Link>
             <Link to="/energy-types" className="text-white hover:bg-secondary px-3 py-2 rounded-md text-sm font-medium">
-              Types d'Énergie
+              Energy Types
             </Link>
             <Link to="/compare" className="text-white hover:bg-secondary px-3 py-2 rounded-md text-sm font-medium">
-              Comparateur
+              Compare
             </Link>
             <Link to="/offers" className="text-white hover:bg-secondary px-3 py-2 rounded-md text-sm font-medium">
-              Offres
+              Offers
             </Link>
             <Link to="/contact" className="text-white hover:bg-secondary px-3 py-2 rounded-md text-sm font-medium">
               Contact
@@ -70,28 +70,28 @@ const Navbar: React.FC = () => {
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
-              Accueil
+              Home
             </Link>
             <Link 
               to="/energy-types" 
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
-              Types d'Énergie
+              Energy Types
             </Link>
             <Link 
               to="/compare" 
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
-              Comparateur
+              Compare
             </Link>
             <Link 
               to="/offers" 
               className="text-white hover:bg-secondary block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
-              Offres
+              Offers
             </Link>
             <Link 
               to="/contact" 

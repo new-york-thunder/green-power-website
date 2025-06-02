@@ -16,7 +16,7 @@ interface OfferCardProps {
 }
 
 const OfferCard: React.FC<OfferCardProps> = ({ offer }) => {
-  const audienceLabel = offer.targetAudience === 'business' ? 'Entreprises' : 'Particuliers';
+  const audienceLabel = offer.targetAudience === 'business' ? 'Business' : 'Residential';
   const isBusinessOffer = offer.targetAudience === 'business';
 
   return (
@@ -37,21 +37,21 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer }) => {
         
         <div className="space-y-3 mb-6">
           <div className="flex justify-between font-medium">
-            <span>Prix par kWh:</span>
-            <span className="text-accent">{offer.pricePerKwh.toFixed(2)}€</span>
+            <span>Price per kWh:</span>
+            <span className="text-accent">£{offer.pricePerKwh.toFixed(2)}</span>
           </div>
           <div className="flex justify-between font-medium">
-            <span>Abonnement mensuel:</span>
-            <span className="text-accent">{offer.standingCharge.toFixed(2)}€</span>
+            <span>Monthly standing charge:</span>
+            <span className="text-accent">£{offer.standingCharge.toFixed(2)}</span>
           </div>
           <div className="flex justify-between font-medium">
-            <span>Durée minimum:</span>
-            <span>{offer.minimumContractPeriod} mois</span>
+            <span>Minimum contract period:</span>
+            <span>{offer.minimumContractPeriod} months</span>
           </div>
         </div>
         
         <div className="mb-6">
-          <h4 className="font-medium mb-2">Caractéristiques:</h4>
+          <h4 className="font-medium mb-2">Features:</h4>
           <ul className="space-y-2">
             {offer.features.map((feature, index) => (
               <li key={index} className="flex items-start">
@@ -66,7 +66,7 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer }) => {
         
         <div className="flex justify-center">
           <button className="py-2 px-6 bg-primary text-white rounded-md hover:bg-secondary transition-colors">
-            Souscrire
+            Subscribe
           </button>
         </div>
       </div>
