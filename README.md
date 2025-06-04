@@ -1,6 +1,41 @@
 # DirtyPower - Energy Supply Website
 
-## Introduction
+## IntroSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Deployment with GitHub Actions
+
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions. Two workflow files have been added:
+
+1. **deploy.yml** - Builds and deploys the application to GitHub Pages whenever changes are pushed to the main branch.
+2. **code-quality.yml** - Runs tests and checks for build errors on pull requests to ensure code quality.
+
+### Setup Steps for GitHub Pages Deployment
+
+1. Replace `VOTRE_NOM_UTILISATEUR` in the `package.json` file's `homepage` property with your actual GitHub username:
+   ```json
+   "homepage": "https://your-github-username.github.io/green-power-website"
+   ```
+
+2. Push your code to GitHub in a repository named `green-power-website`.
+
+3. In your GitHub repository settings:
+   - Go to "Settings" > "Pages"
+   - Under "Source", select the "gh-pages" branch
+   - Save the settings
+
+4. GitHub Actions will automatically build and deploy your site when you push to the main branch.
+
+### Manual Deployment
+
+If you prefer to deploy manually, you can run:
+```bash
+npm run build
+```
+And then upload the contents of the `build` folder to your web hosting service.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**on
 
 This codebase contains a React-based website for DirtyPower, a company offering energy from various sources including gas, coal, and nuclear power plants. The site provides customers with a comprehensive interface to compare different energy options, view detailed information about each energy type, explore pricing plans, and contact the company.
 
