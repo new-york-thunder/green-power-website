@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/green-power-website/static/css/main.4738fa0d.css",
-    "main.js": "/green-power-website/static/js/main.ad25994b.js",
+    "main.js": "/green-power-website/static/js/main.29f190eb.js",
     "static/js/453.14b02d4a.chunk.js": "/green-power-website/static/js/453.14b02d4a.chunk.js",
     "index.html": "/green-power-website/index.html",
     "main.4738fa0d.css.map": "/green-power-website/static/css/main.4738fa0d.css.map",
-    "main.ad25994b.js.map": "/green-power-website/static/js/main.ad25994b.js.map",
+    "main.29f190eb.js.map": "/green-power-website/static/js/main.29f190eb.js.map",
     "453.14b02d4a.chunk.js.map": "/green-power-website/static/js/453.14b02d4a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4738fa0d.css",
-    "static/js/main.ad25994b.js"
+    "static/js/main.29f190eb.js"
   ]
 }
